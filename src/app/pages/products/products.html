@@ -1,28 +1,33 @@
 <section id="products" class="container">
-        
+
     <div class="products--box">
-        
+
         <header>
             <h1>Produtos</h1>
         </header>
-        
-        <div class="products--content">
 
+        <div class="products--content">
+            @for(p of products; track p.id) {
             <div class="card">
                 <div class="card-content">
-                    <p class="name">Product Name</p>
-                    <span class="price">200</span>
+                    <p class="name">{{p.title}}</p>
+                    <p class="price">{{p.price}}</p>
                 </div>
                 <div class="card-image">
-                    <img src="/favicon.ico" alt="Product Name">
+                    <img src="{{p.image}}" alt="Product Name">
                 </div>
                 <div class="card-action">
-                    <button>Adicionar</button>
                     <button>
                         <i class="bx bx-cart-add"></i>
+                        <span>Adicionar</span>
+                    </button>
+
+                    <button>
+                        <i class="bx bx-heart"></i>
                     </button>
                 </div>
             </div>
+            }
 
         </div>
 
