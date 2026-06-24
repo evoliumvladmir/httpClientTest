@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: #f8f8f8;
+}
+
 .container {
     padding: 0 10em;
 }
