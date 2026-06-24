@@ -6,26 +6,30 @@
             <h1>Produtos</h1>
         </header>
 
+
         <div class="products--content">
             @for(p of products; track p.id) {
             <div class="card">
+
                 <div class="card-content">
                     <p class="name">{{p.title}}</p>
-                    <p class="price">{{p.price}}</p>
+                    <p class="price">{{p.price | currency: 'KZ' }}</p>
                 </div>
+                
                 <div class="card-image">
                     <img src="{{p.image}}" alt="Product Name">
                 </div>
+                
                 <div class="card-action">
                     <button>
                         <i class="bx bx-cart-add"></i>
                         <span>Adicionar</span>
                     </button>
-
                     <button>
                         <i class="bx bx-heart"></i>
                     </button>
                 </div>
+
             </div>
             }
 
