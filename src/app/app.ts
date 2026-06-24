@@ -5,9 +5,12 @@ import { RouterOutlet } from '@angular/router';
 import {Home as HomePage} from './pages/home/home';
 import {Products as ProductsPage} from './pages/products/products';
 
+/* component import */
+import {Navbar} from './components/navbar/navbar';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomePage, ProductsPage],
+  imports: [RouterOutlet, HomePage, ProductsPage, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

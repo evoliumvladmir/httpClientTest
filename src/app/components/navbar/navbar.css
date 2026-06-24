@@ -1,0 +1,32 @@
+nav#navbar {
+    width: 100%;
+    height: 56px;
+    background-color: deepskyblue;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav#navbar .navbar-logo {}
+
+nav#navbar .navbar-logo span {
+    font-weight: 500;
+}
+
+nav#navbar .navbar-menu {}
+
+nav#navbar .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav#navbar .navbar-menu li {}
+
+nav#navbar .navbar-menu li a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
